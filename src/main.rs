@@ -24,7 +24,7 @@ fn main() {
     }
     // Solver
     match solver::get_min_steps(start.unwrap(), target.unwrap(), Some(1000)) {
-        Some(nb_steps) => println!("Found the solution in {} steps", nb_steps),
+        Some(nb_steps) => println!("{}", nb_steps),
         None => println!("Did not found a solution..."),
     }
 }
